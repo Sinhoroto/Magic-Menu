@@ -15,7 +15,7 @@ app.use(cors());
 
 app.get("/api/get",(req,res)=>{
     console.log("entrou em api/get")
-    db.query("SELECT * FROM user", (err,result)=>{
+    db.query("SELECT * FROM restaurant", (err,result)=>{
         res.send(result);
     });
 });
