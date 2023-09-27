@@ -72,17 +72,16 @@ $lightGreen: #b9e7e7;
                 justify-content: space-between;
                 .logo{
                     img{
-                        width: 100px;
+                        width: 80px;
                     }
+                }
+                .name{
+                    display: flex;
+                    font-size: 58px;
                 }
                 .links {
                     display: flex;
                     gap: 10px;
-
-                    h6 {
-                        font-size: 16px;
-                        font-weight: 300;
-                    }
                 }
             }
         }
@@ -173,11 +172,14 @@ $lightGreen: #b9e7e7;
 
                 .menu{
                     display: flex;
+                    width: 42%;
 
                     .img{
-                        flex:1;
+                        flex:2;
+                        display: flex;
+                        gap: 10px;
                         img{
-                          //width: 100%;;
+                          width: 95%;
                         }
                     }
 
