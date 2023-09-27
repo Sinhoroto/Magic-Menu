@@ -41,14 +41,8 @@ export const login = (req, res) => {
 
     if(!isPasswordCorrect)
         return res.status(400).json("Wrong username or password");
-  
 
-    res
-        .cookie("access_token", token, {
-          httpOnly: true,
-        })
-        .status(200)
-        .json(data[0]);
+    return res.status(200).json(data);
   });
 };
 

@@ -7,51 +7,51 @@ import axios from 'axios';
 const Home = () => {
   const [restaurant,setRestaurant] = useState([])
 
-  const location = useLocation()
+//  const location = useLocation()
 
-  useEffect(()=>{
-    const fetchData = async ()=>{
-      try{
-        const res = await axios.get("/restaurants")
-        setRestaurant(res.data);
-      }catch(err){
-        console.log(err)
-      }
-    };
-    fetchData();
-  }, []);
-  // const posts = [
-  //   {
-  //     id: 1, 
-  //     title:'Post One',
-  //     body:"This is post one",
-  //     img: Logo
-  //   },
-  //   {
-  //     id :2 ,
-  //     title :"post two",
-  //     body :"this is the second post",
-  //     img: Logo
-  //   },
-  //   {
-  //     id :3 ,
-  //     title :"post two",
-  //     body :"this is the second post",
-  //     img: Logo
-  //   },
-  //   {
-  //     id :4 ,
-  //     title :"post two",
-  //     body :"this is the second post",
-  //     img: Logo
-  //   },
-  //   {
-  //     id :5 ,
-  //     title :"post two",
-  //     body :"this is the second post",
-  //     img: Logo
-  //   }
-  // ];
+  // useEffect(()=>{
+  //   const fetchData = async ()=>{
+  //     try{
+  //       const res = await axios.get("/restaurants")
+  //       setRestaurant(res.data);
+  //     }catch(err){
+  //       console.log(err)
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
+   const posts = [
+     {
+       id: 1, 
+       title:'Post One',
+       body:"This is post one",
+       img: Logo
+     },
+     {
+       id :2 ,
+       title :"post two",
+       body :"this is the second post",
+       img: Logo
+     },
+     {
+       id :3 ,
+       title :"post two",
+       body :"this is the second post",
+       img: Logo
+     },
+     {
+       id :4 ,
+       title :"post two",
+       body :"this is the second post",
+       img: Logo
+     },
+     {
+       id :5 ,
+       title :"post two",
+       body :"this is the second post",
+       img: Logo
+     }
+   ];
   return (
     <div className='home'>
       <div className='posts'>
